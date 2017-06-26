@@ -1,0 +1,7 @@
+{
+  "name": "floorshop-web",
+  "version": "0.0.1",
+  "description": "web front end client for floor shop",
+  "main": "index.js",
+  "author": "funkyLover"
+}
