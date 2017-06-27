@@ -3,5 +3,21 @@
   "version": "0.0.1",
   "description": "web front end client for floor shop",
   "main": "index.js",
-  "author": "funkyLover"
+  "author": "funkyLover",
+  "devDependencies": {
+    "babel-preset-env": "^1.5.2",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
 }
