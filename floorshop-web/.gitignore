@@ -11,6 +11,9 @@ yarn-error.log*
 # dist
 dist/
 
+# config
+config/config.js
+
 # Runtime data
 pids
 *.pid
