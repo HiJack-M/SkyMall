@@ -1,13 +1,23 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import { AppContainer } from 'react-hot-loader'
+
+// Needed for onTouchTap
+injectTapEventPlugin()
 
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <BrowserRouter>
+        <MuiThemeProvider>
+          <Component />
+        </MuiThemeProvider>
+      </BrowserRouter>
     </AppContainer>,
     document.getElementById('root')
   )
