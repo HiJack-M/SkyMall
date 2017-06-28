@@ -13,6 +13,7 @@ dist/
 
 # config
 config/config.js
+config/config.prod.js
 
 # Runtime data
 pids
