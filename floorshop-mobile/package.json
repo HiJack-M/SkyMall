@@ -6,7 +6,7 @@
   "author": "funkyLover",
   "scripts": {
     "dev:dashboard": "webpack-dashboard -c magenta -- webpack-dev-server --hot --progress --colors --quiet --port 3000 --config build/webpack.dev.js",
-    "dev": "webpack-dev-server --hot --progress --colors --quiet --port 3000 --config build/webpack.dev.js"
+    "dev": "webpack-dev-server --hot --progress --colors --quiet --port 3000 --history-api-fallback --config build/webpack.dev.js"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -26,6 +26,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.3",
     "react-hot-loader": "next",
     "webpack": "^3.0.0",
     "webpack-dashboard": "^0.4.0",
@@ -34,8 +35,10 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "css-loader": "^0.28.4",
+    "history": "^4.6.3",
     "material-ui": "^0.18.4",
     "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
