@@ -11,8 +11,9 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    vendor: ['react', 'react-dom', 'material-ui', 'react-router-dom', 'react-tap-event-plugin'],
-    app: ['react-hot-loader/patch', './src/main.js']
+    // react-hot-reload/patch should not be packup when production
+    vendor: ['react', 'react-dom', 'material-ui', 'react-router-dom', 'react-tap-event-plugin', 'react-hot-loader/patch'],
+    app: './src/main.js'
   },
   output: {
     path: resolve('dist'),
@@ -30,7 +31,9 @@ module.exports = {
       { test: /\.(js|jsx)$/, include: [resolve('src')], loader: 'eslint-loader', enforce: 'pre',
         options: { formatter: require('eslint-friendly-formatter') }
       },
-      { test: /\.(js|jsx)$/, include: [resolve('src')], loader: 'babel-loader' }
+      { test: /\.(js|jsx)$/, include: [resolve('src')], loader: 'babel-loader' },
+      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
+      { test: /\.scss$/, use: [ 'style-loader', 'css-loader', 'sass-loader' ] }
     ]
   },
   plugins: [
