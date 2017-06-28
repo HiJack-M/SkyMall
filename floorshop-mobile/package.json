@@ -1,7 +1,7 @@
 {
-  "name": "floorshop-web",
+  "name": "floorshop-mobile",
   "version": "0.0.1",
-  "description": "web front end client for floor shop",
+  "description": "mobile web front end client for floor shop",
   "main": "index.js",
   "author": "funkyLover",
   "scripts": {

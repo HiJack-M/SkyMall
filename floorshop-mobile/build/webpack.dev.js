@@ -1,5 +1,6 @@
 
 var path = require('path')
+var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var DashboardPlugin = require('webpack-dashboard/plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
@@ -10,7 +11,8 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    vendor: ['react', 'react-dom', 'material-ui', 'react-router-dom', 'react-tap-event-plugin'],
+    app: ['react-hot-loader/patch', './src/main.js']
   },
   output: {
     path: resolve('dist'),
@@ -32,6 +34,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      minChunks: Infinity,
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: resolve('src/index.html'),
