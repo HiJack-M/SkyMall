@@ -6,6 +6,11 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import { AppContainer } from 'react-hot-loader'
+import initRem from './utils/remv'
+import '@/utils/bootstrap'
+
+// 初始化rem基准
+initRem()
 
 // Needed for onTouchTap
 injectTapEventPlugin()

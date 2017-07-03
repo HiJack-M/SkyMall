@@ -8,6 +8,7 @@ import Me from '@/pages/me'
 import Tabbar from '@/components/tabbar'
 
 import 'normalize.css/normalize.css'
+import '@/style/common.scss'
 
 export default class App extends React.Component {
   render () {

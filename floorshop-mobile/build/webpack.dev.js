@@ -17,7 +17,8 @@ module.exports = {
   },
   output: {
     path: resolve('dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/'
   },
   devtool: 'cheap-eval-source-map',
   resolve: {

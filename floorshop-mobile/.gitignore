@@ -12,8 +12,8 @@ yarn-error.log*
 dist/
 
 # config
-config/config.js
-config/config.prod.js
+src/config/config.js
+src/config/config.prod.js
 
 # Runtime data
 pids
