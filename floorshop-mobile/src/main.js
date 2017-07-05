@@ -4,8 +4,12 @@ import ReactDOM from 'react-dom'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { BrowserRouter } from 'react-router-dom'
-import App from './App'
 import { AppContainer } from 'react-hot-loader'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+// floor shop app store
+import fsApp from './reducers'
+import App from './App'
 import initRem from './utils/remv'
 import '@/utils/bootstrap'
 
@@ -15,14 +19,18 @@ initRem()
 // Needed for onTouchTap
 injectTapEventPlugin()
 
+let store = createStore(fsApp)
+
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
-      <BrowserRouter>
-        <MuiThemeProvider>
-          <Component />
-        </MuiThemeProvider>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <MuiThemeProvider>
+            <Component />
+          </MuiThemeProvider>
+        </BrowserRouter>
+      </Provider>
     </AppContainer>,
     document.getElementById('root')
   )

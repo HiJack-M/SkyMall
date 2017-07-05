@@ -7,6 +7,8 @@ import Order from '@/pages/order'
 import Me from '@/pages/me'
 import Tabbar from '@/components/tabbar'
 
+import Counter from '@/components/counter'
+
 import 'normalize.css/normalize.css'
 import '@/style/common.scss'
 
@@ -17,6 +19,7 @@ export default class App extends React.Component {
         <Route exact path='/' component={Index} />
         <Route path='/order' component={Order} />
         <Route path='/me' component={Me} />
+        <Counter />
         <Tabbar />
       </div>
     )
