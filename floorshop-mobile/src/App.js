@@ -7,6 +7,7 @@ import Order from '@/pages/order'
 import Me from '@/pages/me'
 import Tabbar from '@/components/tabbar'
 
+// test for redux
 import Counter from '@/components/counter'
 
 import 'normalize.css/normalize.css'
