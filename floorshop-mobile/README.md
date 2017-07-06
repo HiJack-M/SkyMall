@@ -1,1 +1,1 @@
-# Floor Shop Web Front-end client
+# Floor Shop Mobile Web Front-end client
