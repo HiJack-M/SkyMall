@@ -38,9 +38,17 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('development')
+      }
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendor",
       minChunks: Infinity,
+    }),
+    new webpack.ProvidePlugin({
+      'Promise': ['es6-promise', 'Promise']
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',

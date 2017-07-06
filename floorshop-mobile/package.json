@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
+    "es6-promise": "^4.1.1",
     "material-ui": "^0.18.4",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.10",
