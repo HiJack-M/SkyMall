@@ -11,8 +11,8 @@ class Tabbar extends React.Component {
   constructor (props) {
     super(props)
     let path = props.location.pathname
-    let index = _.findIndex(props.route, (i) => i.path === path)
-    this.state = { initalTab: index, path: props.route[index].path }
+    let index = _.findIndex(props.routes, (i) => i.path === path)
+    this.state = { initalTab: index, path: props.routes[index].path }
     this.tabChange = this.tabChange.bind(this)
   }
   componentWillReceiveProps (nextProps) {
@@ -24,7 +24,7 @@ class Tabbar extends React.Component {
   }
 
   render () {
-    const tabs = this.props.route.map((tab) => {
+    const tabs = this.props.routes.map((tab) => {
       return <Tab value={tab.path} label={tab.label} icon={tab.icon} key={tab.path} />
     })
     return (
@@ -38,7 +38,7 @@ class Tabbar extends React.Component {
 Tabbar.propTypes = {
   history: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
-  route: PropTypes.array
+  routes: PropTypes.array
 }
 
 export default withRouter(Tabbar)

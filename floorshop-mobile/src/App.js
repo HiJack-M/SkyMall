@@ -32,7 +32,7 @@ export default class App extends React.Component {
         <Route path='/collection' component={Collection} />
         <Route path='/me' component={Me} />
         <Counter />
-        <Tabbar route={[
+        <Tabbar routes={[
           { path: '/', label: 'Home', icon: <HomeIcon /> },
           { path: '/discover', label: 'Discover', icon: <EarchIcon /> },
           { path: '/collection', label: 'Collection', icon: <StarIcon /> },
