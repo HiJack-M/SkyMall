@@ -12,7 +12,7 @@ function resolve (dir) {
 module.exports = {
   entry: {
     // react-hot-reload/patch should not be packup when production
-    vendor: ['react', 'react-dom', 'material-ui', 'react-router-dom', 'react-tap-event-plugin', 'react-hot-loader/patch'],
+    vendor: ['react', 'react-dom', 'material-ui', 'react-router-dom', 'react-swipeable-views', 'react-tap-event-plugin', 'react-hot-loader/patch'],
     app: './src/main.js'
   },
   output: {

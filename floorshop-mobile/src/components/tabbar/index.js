@@ -1,29 +1,18 @@
+
 import React from 'react'
 import {Tabs, Tab} from 'material-ui/Tabs'
-import FontIcon from 'material-ui/FontIcon'
-import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin'
 import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import _ from 'lodash'
+
+import './index.scss'
 
 class Tabbar extends React.Component {
   constructor (props) {
     super(props)
     let path = props.location.pathname
-    switch (path) {
-      case '/':
-        this.state = { initalTab: 0 }
-        break
-      case '/order':
-        this.state = { initalTab: 1 }
-        break
-      case '/me':
-        this.state = { initalTab: 2 }
-        break
-      default:
-        this.state = { initalTab: 0 }
-        break
-    }
-    this.state.path = path
+    let index = _.findIndex(props.route, (i) => i.path === path)
+    this.state = { initalTab: index, path: props.route[index].path }
     this.tabChange = this.tabChange.bind(this)
   }
   componentWillReceiveProps (nextProps) {
@@ -35,14 +24,12 @@ class Tabbar extends React.Component {
   }
 
   render () {
+    const tabs = this.props.route.map((tab) => {
+      return <Tab value={tab.path} label={tab.label} icon={tab.icon} key={tab.path} />
+    })
     return (
-      <Tabs onChange={this.tabChange} initialSelectedIndex={this.state.initalTab} value={this.state.path}>
-        <Tab value='/' icon={<FontIcon className='material-icons'>phone</FontIcon>}
-          label='RECENTS' />
-        <Tab value='/order' icon={<FontIcon className='material-icons'>favorite</FontIcon>}
-          label='FAVORITES' />
-        <Tab value='/me' icon={<MapsPersonPin />}
-          label='NEARBY' />
+      <Tabs className='fs-tabs' onChange={this.tabChange} initialSelectedIndex={this.state.initalTab} value={this.state.path}>
+        {tabs}
       </Tabs>
     )
   }
@@ -50,7 +37,8 @@ class Tabbar extends React.Component {
 
 Tabbar.propTypes = {
   history: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired
+  location: PropTypes.object.isRequired,
+  route: PropTypes.array
 }
 
 export default withRouter(Tabbar)

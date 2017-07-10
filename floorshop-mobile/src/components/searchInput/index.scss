@@ -1,0 +1,22 @@
+
+.fs-search-input {
+  width: 80%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 20px;
+
+  .fs-input-wrapper {
+    position: relative;
+
+    .fs-search-input-icon {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-45%);
+    }
+    .fs-search-input-input {
+      text-indent: 40px;
+    }
+  }
+}
