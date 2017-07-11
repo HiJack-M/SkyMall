@@ -1,6 +1,6 @@
-# floorshop-admin
+# floorshop-keeper
 
-> floor shop admin front-end client
+> front-end client for shop keeper
 
 ## Build Setup
 

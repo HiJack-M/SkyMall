@@ -44,8 +44,8 @@ module.exports = {
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor",
-      minChunks: Infinity,
+      name: 'vendor',
+      minChunks: Infinity
     }),
     new webpack.ProvidePlugin({
       'Promise': ['es6-promise', 'Promise']
