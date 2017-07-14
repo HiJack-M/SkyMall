@@ -3,6 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 
+import initRem from '@/utils/remv'
+import '@/utils/bootstrap'
+
+// 初始化rem基准
+initRem()
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,0 +1,37 @@
+
+/*320px布局*/
+html {
+  font-size: 100px;
+}
+
+body {
+  margin: 0 auto !important;
+  // bug fix of invalid font property
+  font: 12px/1.5 "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", 宋体, SimSun, sans-serif;
+  font-family: "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", 宋体, SimSun, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 50rem;
+}
+
+input,button,textarea,select,label {
+    font-size:100%;
+}
+
+
+/* iphone 6 */
+@media (min-device-width: 375px) and (max-device-width: 667px ) and (-webkit-min-device-pixel-ratio: 2 ){
+    html {
+      font-size: 117.1875px;
+    }
+}
+
+/* iphone6 plus */
+@media (min-device-width: 414px ) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3 ){
+    html {
+      font-size: 129.375px;
+    }
+}
+
