@@ -1,47 +1,13 @@
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-import injectTapEventPlugin from 'react-tap-event-plugin'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import { BrowserRouter } from 'react-router-dom'
-import { AppContainer } from 'react-hot-loader'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-// floor shop app store
-import fsApp from './reducers'
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
 import App from './App'
-import initRem from './utils/remv'
-import '@/utils/bootstrap'
 
-// 初始化rem基准
-initRem()
+Vue.config.productionTip = false
 
-// Needed for onTouchTap
-injectTapEventPlugin()
-
-let store = createStore(fsApp)
-
-const render = Component => {
-  ReactDOM.render(
-    <AppContainer>
-      <Provider store={store}>
-        <BrowserRouter>
-          <MuiThemeProvider>
-            <Component />
-          </MuiThemeProvider>
-        </BrowserRouter>
-      </Provider>
-    </AppContainer>,
-    document.getElementById('root')
-  )
-}
-
-render(App)
-
-// hot module replacement
-if (module.hot) {
-  module.hot.accept('./App', () => {
-    const NextRootContainer = require('./App').default
-    render(NextRootContainer)
-  })
-}
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: { App }
+})
