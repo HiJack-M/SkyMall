@@ -32,7 +32,7 @@
 - `fs-moblie`为客户(C)端(Mobile Web)
 - `fs-weapp`为客户(C)端(微信小程序)
 
-前端或Nodejs后台项目使用一致的`eslint`,`editorconfig`配置,请预先修改好各自的IDE配置并严格遵守代码规范.`babel`视情况做调整.
+前端或Nodejs后台项目使用一致的`eslint`,`editorconfig`配置,请预先修改好各自的IDE配置并严格遵守代码规范.`babel`视情况做调整.使用yarn而非(npm)来下载依赖,这样可以保证各端依赖版本的一致性,而且yarn的速度比npm更快,详见[yarn文档](https://yarnpkg.com/zh-Hans/docs/install)
 
 #### fs-moblie
 
