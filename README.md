@@ -6,10 +6,10 @@
 
 - [ ] 把安卓项目整合进来
 - [ ] ios项目解决方案
-- [ ] 进度管理,roadmap等(trello)
+- [x] 进度管理,roadmap等(trello)
 - [ ] 后台方案
 - [ ] 测试,CI系统
-- [ ] 文件共享(包括文件等)
+- [ ] 文件共享(包括文档等)
 
 ## 注意事项
 
@@ -26,7 +26,7 @@
   - 建议是一个完整的功能,或是依赖变动,架构变动时再合并
 - 完成一个版本后从dev分支checkout release分支,并打上版本号发布
 
-### 前端项目
+### web项目
 
 - `fs-admin`为管理端(Desktop Web)
 - `fs-keeper`为商家端(Desktop Web)
@@ -41,3 +41,11 @@
 
 - [framework7文档](http://framework7.io/)
 - [framework7+vue文档](http://framework7.io/vue/)
+
+### 移动端项目
+
+> 待补充
+
+### 后台项目
+
+> 待讨论
