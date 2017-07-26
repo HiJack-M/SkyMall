@@ -32,6 +32,7 @@
         </f7-pages>
       </f7-view>
     </f7-views>
+    <Login id="login-screen"></Login>
   </div>
 </template>
 
@@ -40,6 +41,7 @@ import Home from '@/pages/Home'
 import Discount from '@/pages/Discount'
 import Discover from '@/pages/Discover'
 import Me from '@/pages/Me'
+import Login from '@/pages/Login'
 
 export default {
   name: 'app',
@@ -47,7 +49,8 @@ export default {
     Home,
     Discount,
     Discover,
-    Me
+    Me,
+    Login
   }
 }
 </script>
