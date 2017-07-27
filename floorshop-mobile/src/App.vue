@@ -9,30 +9,30 @@
         <f7-pages>
           <f7-page>
             <f7-tabs>
-              <f7-tab id="tab1" active>
+              <f7-tab id="Home" active>
                 <Home></Home>
               </f7-tab>
-              <f7-tab id="tab2">
+              <f7-tab id="Discover">
                 <Discover></Discover>
               </f7-tab>
-              <f7-tab id="tab3">
+              <f7-tab id="Discount">
                 <Discount></Discount>
               </f7-tab>
-              <f7-tab id="tab4">
+              <f7-tab id="Me">
                 <Me></Me>
               </f7-tab>
             </f7-tabs>
             <f7-toolbar tabbar bottom>
-              <f7-link tab-link="#tab1" text="Tab 1"></f7-link>
-              <f7-link tab-link="#tab2" text="Tab 2"></f7-link>
-              <f7-link tab-link="#tab3" text="Tab 3"></f7-link>
-              <f7-link tab-link="#tab4" text="Tab 4"></f7-link>
+              <f7-link tab-link="#Home" text="首页" active></f7-link>
+              <f7-link tab-link="#Discover" text="发现"></f7-link>
+              <f7-link tab-link="#Discount" text="折扣"></f7-link>
+              <f7-link tab-link="#Me" text="我"></f7-link>
             </f7-toolbar>
           </f7-page>
         </f7-pages>
       </f7-view>
     </f7-views>
-    <Login id="login-screen"></Login>
+    <Login id="FS-Login"></Login>
   </div>
 </template>
 

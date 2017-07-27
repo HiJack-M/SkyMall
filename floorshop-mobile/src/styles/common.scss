@@ -6,8 +6,6 @@ html {
 
 body {
   margin: 0 auto !important;
-  // bug fix of invalid font property
-  font: 12px/1.5 "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", 宋体, SimSun, sans-serif;
   font-family: "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", 宋体, SimSun, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,4 +32,3 @@ input,button,textarea,select,label {
       font-size: 129.375px;
     }
 }
-
