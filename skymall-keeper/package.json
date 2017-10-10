@@ -1,7 +1,7 @@
 {
-  "name": "floorshop-admin",
+  "name": "skymall-keeper",
   "version": "1.0.0",
-  "description": "floor shop admin front-end client",
+  "description": "front-end client for shop keeper",
   "author": "funkyLover",
   "private": true,
   "scripts": {

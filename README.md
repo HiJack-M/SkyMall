@@ -1,6 +1,6 @@
-# Floor Shop
+# Sky Mall
 
-注: 下面把floorshop简写成fs,仅为方便,大家意会就好.
+注: 下面把skymall简写成sm,仅为方便,大家意会就好.
 
 ## Todo
 
@@ -28,14 +28,14 @@
 
 ### web项目
 
-- `fs-admin`为管理端(Desktop Web)
-- `fs-keeper`为商家端(Desktop Web)
-- `fs-moblie`为客户(C)端(Mobile Web)
-- `fs-weapp`为客户(C)端(微信小程序)
+- `sm-admin`为管理端(Desktop Web)
+- `sm-keeper`为商家端(Desktop Web)
+- `sm-moblie`为客户(C)端(Mobile Web)
+- `sm-weapp`为客户(C)端(微信小程序)
 
 前端或Nodejs后台项目使用一致的`eslint`,`editorconfig`配置,请预先修改好各自的IDE配置并严格遵守代码规范.`babel`视情况做调整.使用yarn而非(npm)来下载依赖,这样可以保证各端依赖版本的一致性,而且`yarn`的速度比npm更快,详见[yarn文档](https://yarnpkg.com/zh-Hans/docs/install)
 
-#### fs-moblie
+#### sm-moblie
 
 使用framework7 + material design
 

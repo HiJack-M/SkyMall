@@ -1,4 +1,4 @@
-# floorshop-keeper
+# skymall-keeper
 
 > front-end client for shop keeper
 

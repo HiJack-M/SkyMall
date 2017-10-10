@@ -1,6 +1,6 @@
-# floorshop-admin
+# skymall-mobile
 
-> floor shop admin front-end client
+> sky mall moblie front-end client
 
 ## Build Setup
 
