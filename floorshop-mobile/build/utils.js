@@ -47,7 +47,7 @@ exports.cssLoaders = function (options) {
   // global style
   var scssOptions = {
     includePaths: ['./src/styles'],
-    data: '@import "colors.scss";@import "base.scss";'
+    data: '@import "colors.scss";@import "base.scss";@import "mixin.scss";'
   }
 
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
