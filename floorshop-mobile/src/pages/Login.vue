@@ -10,13 +10,13 @@
           <f7-tabs>
             <f7-tab id="Sign-In" active>
               <f7-list form>
-                <f7-list-item :class="{ err: $validate.error['login-username'] }">
-                  <f7-label>{{ $validate.error['login-username'] && '用户名' }}</f7-label>
-                  <f7-input name="username" field="login-username" v-vli="['required', 'username']" placeholder="请输入登录用户名" type="text" v-model="login.username" autocomplete="off"></f7-input>
+                <f7-list-item>
+                  <f7-label>用户名</f7-label>
+                  <f7-input name="username" field="login-username" placeholder="请输入登录用户名" type="text" v-model="login.username" autocomplete="off"></f7-input>
                 </f7-list-item>
-                <f7-list-item :class="{ err: $validate.error['login-password'] }">
-                  <f7-label>{{ $validate.error['login-password'] && '密码' }}</f7-label>
-                  <f7-input name="password" field="login-password" v-vli="['required', 'password']" type="password" placeholder="请输入登录密码" v-model="login.password" autocomplete="off"></f7-input>
+                <f7-list-item>
+                  <f7-label>密码</f7-label>
+                  <f7-input name="password" field="login-password" type="password" placeholder="请输入登录密码" v-model="login.password" autocomplete="off"></f7-input>
                 </f7-list-item>
               </f7-list>
               <f7-list>

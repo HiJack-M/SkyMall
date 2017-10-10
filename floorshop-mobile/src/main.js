@@ -8,6 +8,7 @@ import Framework7Vue from 'framework7-vue'
 import 'normalize.css/normalize.css'
 import 'framework7/dist/css/framework7.material.min.css'
 import 'framework7/dist/css/framework7.material.colors.min.css'
+import '@/styles/theme.scss'
 // container
 import App from './App'
 import routes from '@/router'

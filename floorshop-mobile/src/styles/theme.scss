@@ -1,0 +1,421 @@
+
+@import './colors.scss';
+
+.theme-pink .button:not(.button-fill) {
+  color: $main;
+}
+.theme-pink .navbar .button:not(.button-fill),
+.theme-pink.navbar .button:not(.button-fill),
+.theme-pink .toolbar .button:not(.button-fill),
+.theme-pink.toolbar .button:not(.button-fill),
+.theme-pink .subnavbar .button:not(.button-fill),
+.theme-pink.subnavbar .button:not(.button-fill) {
+  color: #fff;
+}
+.theme-pink .button.button-fill {
+  background: $main;
+  color: #fff;
+}
+html:not(.watch-active-state) .theme-pink .button.button-fill:active,
+.theme-pink .button.button-fill.active-state {
+  background: $main-deep;
+}
+.progressbar.theme-pink,
+.theme-pink .progressbar {
+  background-color: $main-light;
+}
+.progressbar.theme-pink span,
+.theme-pink .progressbar span {
+  background-color: $main;
+}
+.progressbar-infinite.theme-pink,
+.theme-pink .progressbar-infinite {
+  background-color: $main-light;
+}
+.progressbar-infinite.theme-pink:after,
+.theme-pink .progressbar-infinite:after,
+.progressbar-infinite.theme-pink:before,
+.theme-pink .progressbar-infinite:before {
+  background-color: $main;
+}
+.color-pink i.icon,
+i.icon.color-pink {
+  color: $main;
+}
+i.icon-next.color-pink,
+i.icon-next.theme-pink {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20fill%3D'%23e91e63'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M10%206L8.59%207.41%2013.17%2012l-4.58%204.59L10%2018l6-6z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E");
+}
+i.icon-prev.color-pink,
+i.icon-prev.theme-pink {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20fill%3D'%23e91e63'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M15.41%207.41L14%206l-6%206%206%206%201.41-1.41L10.83%2012z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E");
+}
+i.icon-back.color-pink,
+i.icon-back.theme-pink {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M20%2011H7.83l5.59-5.59L12%204l-8%208%208%208%201.41-1.41L7.83%2013H20v-2z'%20fill%3D'%23e91e63'%2F%3E%3C%2Fsvg%3E");
+}
+i.icon-forward.color-pink,
+i.icon-forward.theme-pink {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M12%204l-1.41%201.41L16.17%2011H4v2h12.17l-5.58%205.59L12%2020l8-8z'%20fill%3D'%23e91e63'%2F%3E%3C%2Fsvg%3E");
+}
+i.icon-bars.color-pink,
+i.icon-bars.theme-pink {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M3%2018h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'%20fill%3D'%23e91e63'%2F%3E%3C%2Fsvg%3E");
+}
+.theme-pink a,
+.theme-pink .card a {
+  color: $main;
+}
+.theme-pink .navbar,
+.navbar.theme-pink,
+.theme-pink .toolbar,
+.toolbar.theme-pink,
+.theme-pink .subnavbar,
+.subnavbar.theme-pink,
+.theme-pink .searchbar,
+.searchbar.theme-pink {
+  background-color: $main;
+}
+.theme-pink .label-switch input[type="checkbox"]:checked + .checkbox,
+.label-switch.theme-pink input[type="checkbox"]:checked + .checkbox {
+  background-color: $main-light;
+}
+.theme-pink .label-switch input[type="checkbox"]:checked + .checkbox:after,
+.label-switch.theme-pink input[type="checkbox"]:checked + .checkbox:after {
+  background-color: $main;
+}
+.theme-pink label.label-checkbox i.icon-form-checkbox:after,
+label.label-checkbox.theme-pink i.icon-form-checkbox:after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20fill%3D'%23ffffff'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M9%2016.17L4.83%2012l-1.42%201.41L9%2019%2021%207l-1.41-1.41z'%2F%3E%3C%2Fsvg%3E");
+}
+.theme-pink label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
+label.label-checkbox.theme-pink input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
+.theme-pink label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox,
+label.label-checkbox.theme-pink input[type="radio"]:checked + .item-media i.icon-form-checkbox,
+.theme-pink label.label-checkbox input[type="checkbox"]:checked ~ .item-after i.icon-form-checkbox,
+label.label-checkbox.theme-pink input[type="checkbox"]:checked ~ .item-after i.icon-form-checkbox,
+.theme-pink label.label-checkbox input[type="radio"]:checked ~ .item-after i.icon-form-checkbox,
+label.label-checkbox.theme-pink input[type="radio"]:checked ~ .item-after i.icon-form-checkbox,
+.theme-pink label.label-checkbox input[type="checkbox"]:checked ~ .item-inner i.icon-form-checkbox,
+label.label-checkbox.theme-pink input[type="checkbox"]:checked ~ .item-inner i.icon-form-checkbox,
+.theme-pink label.label-checkbox input[type="radio"]:checked ~ .item-inner i.icon-form-checkbox,
+label.label-checkbox.theme-pink input[type="radio"]:checked ~ .item-inner i.icon-form-checkbox {
+  border-color: $main;
+  background-color: $main;
+}
+.theme-pink label.label-radio i.icon-form-radio:after,
+label.label-radio.theme-pink i.icon-form-radio:after {
+  background-color: $main;
+}
+.theme-pink label.label-radio input[type="checkbox"]:checked + .item-media i.icon-form-radio,
+label.label-radio.theme-pink input[type="checkbox"]:checked + .item-media i.icon-form-radio,
+.theme-pink label.label-radio input[type="radio"]:checked + .item-media i.icon-form-radio,
+label.label-radio.theme-pink input[type="radio"]:checked + .item-media i.icon-form-radio,
+.theme-pink label.label-radio input[type="checkbox"]:checked ~ .item-after i.icon-form-radio,
+label.label-radio.theme-pink input[type="checkbox"]:checked ~ .item-after i.icon-form-radio,
+.theme-pink label.label-radio input[type="radio"]:checked ~ .item-after i.icon-form-radio,
+label.label-radio.theme-pink input[type="radio"]:checked ~ .item-after i.icon-form-radio,
+.theme-pink label.label-radio input[type="checkbox"]:checked ~ .item-inner i.icon-form-radio,
+label.label-radio.theme-pink input[type="checkbox"]:checked ~ .item-inner i.icon-form-radio,
+.theme-pink label.label-radio input[type="radio"]:checked ~ .item-inner i.icon-form-radio,
+label.label-radio.theme-pink input[type="radio"]:checked ~ .item-inner i.icon-form-radio {
+  border-color: $main;
+}
+.theme-pink label.label-radio input[type="checkbox"]:checked + .item-media i.icon-form-radio:after,
+label.label-radio.theme-pink input[type="checkbox"]:checked + .item-media i.icon-form-radio:after,
+.theme-pink label.label-radio input[type="radio"]:checked + .item-media i.icon-form-radio:after,
+label.label-radio.theme-pink input[type="radio"]:checked + .item-media i.icon-form-radio:after,
+.theme-pink label.label-radio input[type="checkbox"]:checked ~ .item-after i.icon-form-radio:after,
+label.label-radio.theme-pink input[type="checkbox"]:checked ~ .item-after i.icon-form-radio:after,
+.theme-pink label.label-radio input[type="radio"]:checked ~ .item-after i.icon-form-radio:after,
+label.label-radio.theme-pink input[type="radio"]:checked ~ .item-after i.icon-form-radio:after,
+.theme-pink label.label-radio input[type="checkbox"]:checked ~ .item-inner i.icon-form-radio:after,
+label.label-radio.theme-pink input[type="checkbox"]:checked ~ .item-inner i.icon-form-radio:after,
+.theme-pink label.label-radio input[type="radio"]:checked ~ .item-inner i.icon-form-radio:after,
+label.label-radio.theme-pink input[type="radio"]:checked ~ .item-inner i.icon-form-radio:after {
+  background-color: $main;
+}
+.theme-pink .form-checkbox input[type="checkbox"]:checked ~ i,
+.form-checkbox.theme-pink input[type="checkbox"]:checked ~ i {
+  border-color: $main;
+  background-color: $main;
+}
+.theme-pink .form-radio input[type="radio"]:checked ~ i,
+.form-radio.theme-pink input[type="radio"]:checked ~ i {
+  border-color: $main;
+}
+.theme-pink .form-radio input[type="radio"]:checked ~ i:after,
+.form-radio.theme-pink input[type="radio"]:checked ~ i:after {
+  background-color: $main;
+}
+.theme-pink .form-checkbox .ripple-wave,
+.theme-pink .form-radio .ripple-wave {
+  background: $main-light;
+}
+.theme-pink .focus-state .label,
+.theme-pink .focus-state .floating-label {
+  color: $main;
+}
+.theme-pink .item-input-field.focus-state:after,
+.theme-pink .input-field.focus-state:after,
+.theme-pink .item-input-field.not-empty-state:after,
+.theme-pink .input-field.not-empty-state:after {
+  background: $main;
+}
+.theme-pink .picker-calendar-day.picker-calendar-day-today span {
+  color: $main;
+}
+.theme-pink .picker-calendar-day.picker-calendar-day-selected span {
+  background-color: $main;
+  color: #fff;
+}
+.theme-pink .picker-calendar-day.picker-calendar-day-has-events span:after {
+  background-color: $main;
+}
+.theme-pink .picker-header {
+  background-color: $main;
+}
+.theme-pink .modal-button {
+  color: $main;
+}
+.theme-pink .timeline-horizontal .timeline-item-date,
+.timeline-horizontal.theme-pink .timeline-item-date {
+  background-color: $main;
+}
+.theme-pink .timeline-year-title,
+.theme-pink .timeline-month-title {
+  background-color: $main;
+}
+.theme-pink .statusbar-overlay {
+  background-color: #880E4F;
+}
+.theme-pink .data-table .data-table-header-selected,
+.data-table.theme-pink .data-table-header-selected {
+  background: rgba(233, 30, 99, 0.1);
+}
+.theme-pink .data-table .data-table-title-selected,
+.data-table.theme-pink .data-table-title-selected {
+  color: $main;
+}
+.swiper-pagination.color-pink .swiper-pagination-bullet-active,
+.theme-pink .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $main;
+}
+.swiper-pagination.color-pink .swiper-pagination-progressbar,
+.theme-pink .swiper-pagination .swiper-pagination-progressbar {
+  background-color: $main;
+}
+.swiper-pagination.swiper-pagination-progress.bg-pink {
+  background-color: $main-dark;
+}
+.swiper-button-next.color-pink,
+.swiper-container-rtl .swiper-button-prev.color-pink,
+.theme-pink .swiper-button-next,
+.theme-pink .swiper-container-rtl .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23e91e63'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-prev.color-pink,
+.swiper-container-rtl .swiper-button-next.color-pink,
+.theme-pink .swiper-button-prev,
+.theme-pink .swiper-container-rtl .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23e91e63'%2F%3E%3C%2Fsvg%3E");
+}
+.theme-pink .floating-button,
+.theme-pink .speed-dial-buttons a,
+.floating-button.theme-pink,
+.speed-dial-buttons a.theme-pink {
+  color: #fff;
+  background: $main;
+}
+html:not(.watch-active-state) .theme-pink .floating-button:active,
+html:not(.watch-active-state) .theme-pink .speed-dial-buttons a:active,
+html:not(.watch-active-state) .floating-button.theme-pink:active,
+html:not(.watch-active-state) .speed-dial-buttons a.theme-pink:active,
+.theme-pink .floating-button.active-state,
+.theme-pink .speed-dial-buttons a.active-state,
+.floating-button.theme-pink.active-state,
+.speed-dial-buttons a.theme-pink.active-state {
+  background: $main-deep;
+}
+.theme-pink .floating-button i,
+.theme-pink .speed-dial-buttons a i,
+.floating-button.theme-pink i,
+.speed-dial-buttons a.theme-pink i {
+  color: inherit;
+}
+.theme-pink .range-slider input[type="range"]::-webkit-slider-thumb:before,
+.range-slider.theme-pink input[type="range"]::-webkit-slider-thumb:before {
+  background-color: $main;
+}
+.theme-pink .range-slider input[type="range"]::-webkit-slider-thumb,
+.range-slider.theme-pink input[type="range"]::-webkit-slider-thumb {
+  background-color: $main;
+}
+.theme-pink .range-slider input[type="range"]::-ms-thumb,
+.range-slider.theme-pink input[type="range"]::-ms-thumb {
+  background-color: $main;
+}
+.theme-pink .range-slider input[type="range"]::-ms-fill-lower,
+.range-slider.theme-pink input[type="range"]::-ms-fill-lower {
+  background-color: $main;
+}
+.theme-pink .range-slider input[type="range"]::-moz-range-thumb,
+.range-slider.theme-pink input[type="range"]::-moz-range-thumb {
+  background-color: $main;
+}
+.badge.theme-pink {
+  background-color: $main;
+  color: #fff;
+}
+
+
+.color-pink {
+  color: $main;
+}
+.list-block .item-link.list-button.color-pink,
+.list-button.color-pink,
+.list-block .item-link.color-pink,
+.tabbar a.active.color-pink,
+a.color-pink {
+  color: $main;
+}
+.label-switch input[type="checkbox"]:checked + .checkbox.color-pink,
+.label-switch.color-pink input[type="checkbox"]:checked + .checkbox {
+  background-color: $main;
+}
+.button.color-pink:not(.button-fill),
+.color-pink.buttons-row .button:not(.button-fill) {
+  color: $main !important;
+}
+.button.button-fill.bg-pink,
+.button.button-fill.color-pink {
+  background: $main !important;
+  color: #fff;
+}
+html:not(.watch-active-state) .button.button-fill.bg-pink:active,
+html:not(.watch-active-state) .button.button-fill.color-pink:active,
+.button.button-fill.bg-pink.active-state,
+.button.button-fill.color-pink.active-state {
+  background: $main-deep !important;
+}
+.progressbar.color-pink,
+.progressbar.bg-pink {
+  background-color: $main-light;
+}
+.progressbar.color-pink span,
+.progressbar.bg-pink span {
+  background-color: $main;
+}
+.progressbar-infinite.color-pink,
+.progressbar-infinite.bg-pink {
+  background-color: $main-light;
+}
+.progressbar-infinite.color-pink:after,
+.progressbar-infinite.bg-pink:after,
+.progressbar-infinite.color-pink:before,
+.progressbar-infinite.bg-pink:before {
+  background-color: $main;
+}
+.color-pink i.icon,
+i.icon.color-pink {
+  color: $main;
+}
+.preloader.color-pink svg circle,
+.preloader.preloader-pink svg circle {
+  stroke: $main;
+}
+.preloader.color-pink .preloader-inner-gap,
+.preloader.preloader-pink .preloader-inner-gap,
+.preloader.color-pink .preloader-inner-half-circle,
+.preloader.preloader-pink .preloader-inner-half-circle {
+  border-color: $main;
+}
+.bg-pink,
+a.bg-pink,
+.list-block .swipeout-actions-left a.bg-pink,
+.list-block .swipeout-actions-right a.bg-pink {
+  background-color: $main;
+}
+html:not(.watch-active-state) .list-block .bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block a.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block .list-block .swipeout-actions-left a.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block .list-block .swipeout-actions-right a.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-blocka.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block.list-block .swipeout-actions-left a.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block.list-block .swipeout-actions-right a.bg-pink .item-link:active,
+html:not(.watch-active-state) .list-block .item-link.bg-pink:active,
+html:not(.watch-active-state) .list-block .item-linka.bg-pink:active,
+html:not(.watch-active-state) .list-block .item-link.list-block .swipeout-actions-left a.bg-pink:active,
+html:not(.watch-active-state) .list-block .item-link.list-block .swipeout-actions-right a.bg-pink:active,
+.list-block .bg-pink .item-link.active-state,
+.list-block a.bg-pink .item-link.active-state,
+.list-block .list-block .swipeout-actions-left a.bg-pink .item-link.active-state,
+.list-block .list-block .swipeout-actions-right a.bg-pink .item-link.active-state,
+.list-block.bg-pink .item-link.active-state,
+.list-blocka.bg-pink .item-link.active-state,
+.list-block.list-block .swipeout-actions-left a.bg-pink .item-link.active-state,
+.list-block.list-block .swipeout-actions-right a.bg-pink .item-link.active-state,
+.list-block .item-link.bg-pink.active-state,
+.list-block .item-linka.bg-pink.active-state,
+.list-block .item-link.list-block .swipeout-actions-left a.bg-pink.active-state,
+.list-block .item-link.list-block .swipeout-actions-right a.bg-pink.active-state {
+  background: $main-deep;
+}
+.border-pink {
+  border-color: $main;
+}
+.list-block .border-pink.item-inner:after,
+.list-block ul.border-pink:after,
+.border-pink:after,
+.list-block .border-pink.item-inner:before,
+.list-block ul.border-pink:before,
+.border-pink:before {
+  background-color: $main;
+}
+.floating-button.color-pink,
+.speed-dial-buttons a.color-pink,
+.floating-button.bg-pink,
+.speed-dial-buttons a.bg-pink {
+  color: #fff;
+  background: $main;
+}
+html:not(.watch-active-state) .floating-button.color-pink:active,
+html:not(.watch-active-state) .speed-dial-buttons a.color-pink:active,
+html:not(.watch-active-state) .floating-button.bg-pink:active,
+html:not(.watch-active-state) .speed-dial-buttons a.bg-pink:active,
+.floating-button.color-pink.active-state,
+.speed-dial-buttons a.color-pink.active-state,
+.floating-button.bg-pink.active-state,
+.speed-dial-buttons a.bg-pink.active-state {
+  background: $main-deep;
+}
+.floating-button.color-pink i,
+.speed-dial-buttons a.color-pink i,
+.floating-button.bg-pink i,
+.speed-dial-buttons a.bg-pink i {
+  color: inherit;
+}
+.ripple-pink .ripple-wave {
+  background-color: $main-dark;
+}
+.range-slider.color-pink input[type="range"]::-webkit-slider-thumb:before {
+  background-color: $main;
+}
+.range-slider.color-pink input[type="range"]::-webkit-slider-thumb {
+  background-color: $main;
+}
+.range-slider.color-pink input[type="range"]::-ms-thumb {
+  background-color: $main;
+}
+.range-slider.color-pink input[type="range"]::-ms-fill-lower {
+  background-color: $main;
+}
+.range-slider.color-pink input[type="range"]::-moz-range-thumb {
+  background-color: $main;
+}
+.badge.color-pink {
+  background-color: $main;
+  color: #fff;
+}
+
