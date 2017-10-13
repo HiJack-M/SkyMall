@@ -15,6 +15,7 @@ import routes from '@/router'
 // utils
 import initRem from '@/utils/remv'
 import '@/utils/bootstrap'
+
 // 初始化rem基准
 initRem()
 

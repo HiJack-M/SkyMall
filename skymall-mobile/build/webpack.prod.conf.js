@@ -28,6 +28,9 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.ProvidePlugin({
       'Promise': ['es6-promise', 'Promise']
     }),
+    new webpack.ProvidePlugin({
+      '_': 'lodash'
+    }),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env

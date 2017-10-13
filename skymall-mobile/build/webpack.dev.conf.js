@@ -21,6 +21,9 @@ module.exports = merge(baseWebpackConfig, {
     new webpack.ProvidePlugin({
       'Promise': ['es6-promise', 'Promise']
     }),
+    new webpack.ProvidePlugin({
+      '_': 'lodash'
+    }),
     new webpack.DefinePlugin({
       'process.env': config.dev.env
     }),

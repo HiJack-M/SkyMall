@@ -3,7 +3,8 @@
 module.exports = {
   root: true,
   "globals": {
-    "Bmob": true
+    "Bmob": true,
+    "_": true
   },
   parser: 'babel-eslint',
   parserOptions: {
