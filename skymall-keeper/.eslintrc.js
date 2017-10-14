@@ -6,6 +6,10 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
+  globals: {
+    Bmob: true,
+    _: true
+  },
   env: {
     browser: true,
   },
