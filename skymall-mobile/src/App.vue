@@ -8,7 +8,7 @@
       <f7-view id="main-view" navbar-through :dynamic-navbar="true" main>
         <f7-pages>
           <f7-page>
-            <f7-tabs>
+            <f7-tabs id="SKM_Main_Tab">
               <f7-tab id="Home" active>
                 <Home></Home>
               </f7-tab>
@@ -22,17 +22,20 @@
                 <Me></Me>
               </f7-tab>
             </f7-tabs>
+            <f7-fab v-if="currentTab !== '#Me'" @click="clickToLogin">
+              <f7-icon icon="icon-plus"></f7-icon>
+            </f7-fab>
             <f7-toolbar tabbar bottom>
-              <f7-link tab-link="#Home" text="首页" active></f7-link>
-              <f7-link tab-link="#Discover" text="发现"></f7-link>
-              <f7-link tab-link="#Discount" text="折扣"></f7-link>
-              <f7-link tab-link="#Me" text="我"></f7-link>
+              <f7-link tab-link="#Home" @click="tabClick('#Home')" text="首页" active></f7-link>
+              <f7-link tab-link="#Discover" @click="tabClick('#Discover')" text="发现"></f7-link>
+              <f7-link tab-link="#Discount" @click="tabClick('#Discount')" text="折扣"></f7-link>
+              <f7-link tab-link="#Me" @click="tabClick('#Me')" text="我"></f7-link>
             </f7-toolbar>
           </f7-page>
         </f7-pages>
       </f7-view>
     </f7-views>
-    <Login id="FS-Login"></Login>
+    <Login id="SKM_Login"></Login>
   </div>
 </template>
 
@@ -51,6 +54,19 @@ export default {
     Discover,
     Me,
     Login
+  },
+  data () {
+    return {
+      currentTab: '#Home'
+    }
+  },
+  methods: {
+    clickToLogin () {
+      this.$f7.loginScreen('#SKM_Login')
+    },
+    tabClick (tabId) {
+      this.currentTab = tabId
+    }
   }
 }
 </script>

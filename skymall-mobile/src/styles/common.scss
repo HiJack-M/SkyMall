@@ -32,3 +32,21 @@ input,button,textarea,select,label {
       font-size: 129.375px;
     }
 }
+
+// reset css
+.navbar-fixed .navbar,
+.navbar-through .navbar,
+.tabbar-fixed .toolbar-bottom,
+.tabbar-labels-fixed .toolbar-bottom,
+.toolbar-bottom,
+.toolbar-fixed .toolbar-bottom {
+  box-shadow: none;
+}
+
+.floating-button {
+  bottom: 64px;
+  transition: box-shadow .3;
+  &:active  {
+    box-shadow: none;
+  }
+}
