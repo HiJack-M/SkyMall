@@ -9,6 +9,8 @@ import 'normalize.css/normalize.css'
 import 'framework7/dist/css/framework7.material.min.css'
 import 'framework7/dist/css/framework7.material.colors.min.css'
 import '@/styles/theme.scss'
+// store
+import store from '@/store'
 // container
 import App from './App'
 import routes from '@/router'
@@ -31,5 +33,6 @@ new Vue({
     material: true,
     routes
   },
+  store,
   components: { App }
 })

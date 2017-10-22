@@ -18,7 +18,8 @@
     "headroom.js": "^0.9.4",
     "lodash": "^4.17.4",
     "normalize.css": "^7.0.0",
-    "vue": "^2.3.3"
+    "vue": "^2.3.3",
+    "vuex": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

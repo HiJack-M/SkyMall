@@ -22,9 +22,6 @@
                 <Me></Me>
               </f7-tab>
             </f7-tabs>
-            <f7-fab v-if="currentTab !== '#Me'" @click="clickToLogin">
-              <f7-icon icon="icon-plus"></f7-icon>
-            </f7-fab>
             <f7-toolbar tabbar bottom>
               <f7-link tab-link="#Home" @click="tabClick('#Home')" text="首页" active></f7-link>
               <f7-link tab-link="#Discover" @click="tabClick('#Discover')" text="发现"></f7-link>
@@ -35,7 +32,6 @@
         </f7-pages>
       </f7-view>
     </f7-views>
-    <Login id="SKM_Login"></Login>
   </div>
 </template>
 
@@ -61,9 +57,6 @@ export default {
     }
   },
   methods: {
-    clickToLogin () {
-      this.$f7.loginScreen('#SKM_Login')
-    },
     tabClick (tabId) {
       this.currentTab = tabId
     }
